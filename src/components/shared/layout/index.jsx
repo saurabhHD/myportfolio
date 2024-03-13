@@ -102,7 +102,9 @@ const Layout = ({children})=> {
               }
             </div>
           </div>
-          <div className="w-[92%] bg-white">ss</div>
+          <div className="w-[92%] bg-white">
+            {children}
+          </div>
         </div>
     )
 }

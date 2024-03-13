@@ -1,10 +1,9 @@
-import Layout from "./components/shared/layout"
+import Home from "./components/home"
+import './app.css'
 
 function App() {
   return (
-    <Layout>
-      hello
-    </Layout>
+    <Home />
   )
 }
 
