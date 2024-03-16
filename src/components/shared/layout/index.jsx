@@ -70,9 +70,10 @@ const Layout = ({children})=> {
                       type="text"
                       size="large"
                       block={true}
-                      className="rounded-none h-20 flex flex-col items-center justify-center"
+                      className="rounded-none h-20 flex flex-col items-center justify-center text-2xl"
+                      title={item.name}
                     >
-                      {item.name} 
+                      
                     </Button>
                     <hr />
                   </div>
@@ -93,6 +94,7 @@ const Layout = ({children})=> {
               {
                 socialMenus.map((item, index) => (
                   <Button
+                    key={index}
                     icon={item.icon}
                     size="large"
                     type="text"
