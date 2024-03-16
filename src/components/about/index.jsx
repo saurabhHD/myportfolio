@@ -15,7 +15,7 @@ const About = ()=> {
                 </div>
             </div>
             <div className="col-span-3 px-5 pt-4">
-                <span className='text-2xl font-semibold p-2 hover:bg-[#FCC255] hover:text-white transition-colors '>About Me</span>
+                <span className='text-2xl font-semibold p-2 hover:bg-[#FCC255] hover:text-white'>About Me</span>
                 <h2 className='text-4xl font-semibold text-[#00C8DA] my-4'>I'm In The Web Development Industry With 2 Years Of Experience.</h2>
                 <p className='text-gray-500'>
                     There are many variations of passages of Lorem Ipsum , but the a have suffered are some form, by injected humour, or the words which don't look even slightl. If you use a passage of, you need to be sure there isn't anything look even slightly believable. If you are going to use a of , you need to be sure there isn't hidden in the middle the on the tend.

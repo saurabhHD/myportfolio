@@ -3,6 +3,7 @@ import Home from "./components/home"
 import About from "./components/about"
 import Resume from "./components/resume"
 import './app.css'
+import Portfolio from "./components/portfolio"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
     <Home />
     <About />
     {/* <Resume /> */}
+    <Portfolio />
    </Layout>
   )
 }

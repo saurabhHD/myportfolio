@@ -59,7 +59,7 @@ const Layout = ({children})=> {
         <div className="w-100 flex">
           <div className="w-[8%] bg-white border-r-4 border-[#ff517e] flex flex-col py-5 gap-8">
             <div className="flex items-center justify-center">
-              <img src="public/images/profile.png" alt="saurabh-profile-pic" />
+              <img src="/images/profile.png" alt="saurabh-profile-pic" />
             </div>
             <div className="w-100">
             {
