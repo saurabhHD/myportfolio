@@ -4,14 +4,16 @@ import About from "./components/about"
 import Resume from "./components/resume"
 import './app.css'
 import Portfolio from "./components/portfolio"
+import ContactUs from "./components/contact-us"
 
 function App() {
   return (
    <Layout>
     <Home />
     <About />
-    {/* <Resume /> */}
+    <Resume />
     <Portfolio />
+    <ContactUs />
    </Layout>
   )
 }
