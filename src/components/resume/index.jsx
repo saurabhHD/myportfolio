@@ -1,4 +1,5 @@
 import { Steps } from "antd"
+import {UserOutlined} from "@ant-design/icons"
 
 const Resume = ()=> {
     return (
@@ -12,13 +13,36 @@ const Resume = ()=> {
                 direction="vertical"
                 items={[
                     {
+                        icon: <UserOutlined />,
                         title : 'B.tech',
                         description: 'I have complete my b.tech from Aktu'
+                    },
+                    {
+                        title: 'Diploma',
+                        description: 'I have comple my diplom from Gov Polytechnic Bijnor'
+                    }
+                    ,
+                    {
+                        title: 'Diploma',
+                        description: 'I have comple my diplom from Gov Polytechnic Bijnor'
+                    }
+                    ,
+                    {
+                        title: 'Diploma',
+                        description: 'I have comple my diplom from Gov Polytechnic Bijnor'
+                    }
+                    ,
+                    {
+                        title: 'Diploma',
+                        description: 'I have comple my diplom from Gov Polytechnic Bijnor'
+                    }
+                    ,
+                    {
+                        title: 'Diploma',
+                        description: 'I have comple my diplom from Gov Polytechnic Bijnor'
                     }
                 ]}
                 />
-
-                
             </div>
         </div>
     )
