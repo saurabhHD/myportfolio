@@ -107,7 +107,7 @@ const Layout = ({children})=> {
           <div className="md:w-[92%] w-full bg-white">
             {children}
             <footer className="bg-[#FCC255] py-3 mt-5">
-              <p className="text-center text-white font-semibold">Copyright © 2024 saurabhk.online. All Rights Reserved</p>
+              <p className="text-center text-white font-semibold md:text-md text-sm">Copyright © 2024 saurabhk.online. All Rights Reserved</p>
             </footer>
           </div>
         </div>
