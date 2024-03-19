@@ -25,7 +25,7 @@ const About = ()=> {
                 <p className='text-gray-500'>
                     Embarrassing hidden in the middle of text. All the Lorem Ipsum generate on the are Internet tend to repeat predefined chunks as necessary, making of this the first true generator on the Internet which don't look even you.
                 </p>
-                <div className='grid md:grid-cols-4 grid-cols-2'>
+                <div className='grid md:grid-cols-4 grid-cols-1'>
                     <div className='flex flex-col gap-1 mt-5'>
                         <span className='text-xl text-[#00C8DA]'>
                             Saurabh Kumar
