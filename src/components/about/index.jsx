@@ -3,7 +3,7 @@ import {PlusOutlined} from '@ant-design/icons'
 
 const About = ()=> {
     return (
-        <div className="grid md:grid-cols-5 px-[5%] py-[5%]">
+        <div className="grid md:grid-cols-5 grid-cols-1 px-[5%] py-[5%]">
             <div className="col-span-2">
                 <div className="p-10">
                     <div className="border-4 border-[#FF517E] p-5">
@@ -24,7 +24,7 @@ const About = ()=> {
                 <p className='text-gray-500'>
                     Embarrassing hidden in the middle of text. All the Lorem Ipsum generate on the are Internet tend to repeat predefined chunks as necessary, making of this the first true generator on the Internet which don't look even you.
                 </p>
-                <div className='grid grid-cols-4'>
+                <div className='grid md:grid-cols-4 grid-cols-2'>
                     <div className='flex flex-col gap-1 mt-5'>
                         <span className='text-xl text-[#00C8DA]'>
                             Saurabh Kumar
@@ -33,11 +33,11 @@ const About = ()=> {
                             Full Stack Developer
                         </span>
                     </div>
-                    <div className='col-span-3 mt-5'>
+                    <div className='md:col-span-3 mt-5'>
                         <img src="/images/signature.png" alt="signature" />
                     </div>
                 </div>
-                <div className='flex mt-5 gap-8'>
+                <div className='flex md:mt-5 mt-10 gap-8'>
                     <MyBtn type='secondary' >
                         Download CV
                     </MyBtn>

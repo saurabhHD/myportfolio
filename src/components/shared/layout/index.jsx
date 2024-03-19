@@ -57,7 +57,7 @@ const Layout = ({children})=> {
 
     return (
         <div className="w-100 flex">
-          <div className="w-[8%] bg-white border-r-4 border-[#ff517e] flex flex-col py-5 gap-8">
+          <div className="md:w-[8%] hidden bg-white border-r-4 border-[#ff517e] md:flex flex-col py-5 gap-8">
             <div className="flex items-center justify-center">
               <img src="/images/profile.png" alt="saurabh-profile-pic" />
             </div>
@@ -104,7 +104,7 @@ const Layout = ({children})=> {
               }
             </div>
           </div>
-          <div className="w-[92%] bg-white">
+          <div className="md:w-[92%] w-full bg-white">
             {children}
             <footer className="bg-[#FCC255] py-3 mt-5">
               <p className="text-center text-white font-semibold">Copyright © 2024 saurabhk.online. All Rights Reserved</p>

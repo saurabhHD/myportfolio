@@ -11,7 +11,7 @@ const MyBtn = ({
 })=> {
     return (
         <button 
-        className={`${rounded && "rounded-full"} ${Type[type]} text-white px-10 py-4 text-md`}>
+        className={`${rounded && "rounded-full"} ${Type[type]} text-white md:px-10 px-4 md:py-4 py-2 md:text-md text-sm`}>
            {children}
         </button>
     )

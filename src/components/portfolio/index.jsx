@@ -5,7 +5,7 @@ const Portfolio = ()=> {
     const projectsCat = [
         {
             label: 'ALL',
-            content : <div className="grid grid-cols-3 gap-8 px-[10%]">
+            content : <div className="grid md:grid-cols-3 grid-cols-1 gap-8 px-[10%]">
             <img src="/images/cv-product01.jpg" alt="test" />
             <img src="/images/cv-product02.jpg" alt="test" />
             <img src="/images/cv-product03.jpg" alt="test" />
@@ -16,7 +16,7 @@ const Portfolio = ()=> {
         },
         {
             label: 'DESIGN',
-            content : <div className="grid grid-cols-3 gap-8 px-[10%]">
+            content : <div className="grid md:grid-cols-3 grid-cols-1 gap-8 px-[10%]">
             <img src="/images/cv-product09.jpg" alt="test" />
             <img src="/images/cv-product08.jpg" alt="test" />
             <img src="/images/cv-product07.jpg" alt="test" />
@@ -27,7 +27,7 @@ const Portfolio = ()=> {
         },
         {
             label: 'DEVELOPMENT',
-            content : <div className="grid grid-cols-3 gap-8 px-[10%]">
+            content : <div className="grid md:grid-cols-3 grid-cols-1 gap-8 px-[10%]">
             <img src="/images/cv-product06.jpg" alt="test" />
             <img src="/images/cv-product05.jpg" alt="test" />
             <img src="/images/cv-product04.jpg" alt="test" />
@@ -38,19 +38,11 @@ const Portfolio = ()=> {
         },
         {
             label: 'PHOTOSHOP',
-            content : <div className="grid grid-cols-3 gap-8 px-[10%]">
+            content : <div className="grid md:grid-cols-3 grid-cols-1 gap-8 px-[10%]">
             <img src="/images/cv-product01.jpg" alt="test" />
             <img src="/images/cv-product04.jpg" alt="test" />
             <img src="/images/cv-product05.jpg" alt="test" />
             <img src="/images/cv-product06.jpg" alt="test" />
-            </div>
-        },
-        {
-            label: 'TEMPLATE',
-            content : <div className="grid grid-cols-3 gap-8 px-[10%]">
-            <img src="/images/cv-product07.jpg" alt="test" />
-            <img src="/images/cv-product08.jpg" alt="test" />
-            <img src="/images/cv-product09.jpg" alt="test" />
             </div>
         }
     ]
