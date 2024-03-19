@@ -2,9 +2,9 @@ import { Button} from "antd"
 import {
   HomeOutlined, 
   FileDoneOutlined,
-  FileOutlined,
+  BookOutlined,
   PhoneOutlined,
-  FacebookOutlined,
+  GithubOutlined,
   LinkedinOutlined,
   WhatsAppOutlined,
   TwitterOutlined,
@@ -16,42 +16,42 @@ const Layout = ({children})=> {
     const menus = [
       {
         name: "Home",
-        icon: <HomeOutlined />
+        icon: <HomeOutlined style={{fontSize: '25px', color: '#FF517E'}} />
       },
       {
         name: "Resume",
-        icon: <FileDoneOutlined />
+        icon: <FileDoneOutlined style={{fontSize: '25px', color: '#00C8DA'}} />
       },
       {
         name: "Portfolio",
-        icon: <FileOutlined  />
+        icon: <BookOutlined  style={{fontSize: '25px', color: '#FCBA58'}}/>
       },
       {
         name: "Contact",
-        icon: <PhoneOutlined />
+        icon: <PhoneOutlined style={{fontSize: '25px', color: '#FF754A'}}/>
       }
     ]
 
     const socialMenus = [
       {
         link: '#',
-        icon: <FacebookOutlined />
+        icon: <GithubOutlined  className="text-blue-800" style={{fontSize: '25px'}} />
       },
       {
         link: '#',
-        icon: <LinkedinOutlined />
+        icon: <p className="text-blue-600" style={{fontSize: '25px'}} >in</p>
       },
       {
         link: '#',
-        icon: <WhatsAppOutlined />
+        icon: <WhatsAppOutlined className="text-green-500" style={{fontSize: '25px'}}/>
       },
       {
         link: '#',
-        icon: <TwitterOutlined />
+        icon: <TwitterOutlined className="text-sky-500" style={{fontSize: '25px'}} />
       },
       {
         link: '#',
-        icon: <InstagramOutlined />
+        icon: <InstagramOutlined className="text-pink-600" style={{fontSize: '25px'}} />
       }
     ]
 
@@ -90,7 +90,7 @@ const Layout = ({children})=> {
               
               </h1>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center gap-2">
               {
                 socialMenus.map((item, index) => (
                   <Button
@@ -98,7 +98,8 @@ const Layout = ({children})=> {
                     icon={item.icon}
                     size="large"
                     type="text"
-                    className="text-[25px]"
+                    block
+                    className="flex flex-col justify-center items-center p-5 rounded-none"
                   />
                 ))
               }
