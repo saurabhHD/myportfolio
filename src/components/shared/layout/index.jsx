@@ -57,7 +57,7 @@ const Layout = ({children})=> {
 
     return (
         <div className="w-100 flex">
-          <div className="md:w-[8%] hidden bg-white border-r-4 border-[#ff517e] md:flex flex-col py-5 gap-8">
+          <div className="md:w-[8%] hidden bg-white md:flex flex-col py-5 gap-8 h-screen overflow-y-scroll md:fixed left-menu-bar" style={{scrollbarWidth: '5px', scrollbarColor: 'blue'}}>
             <div className="flex items-center justify-center">
               <img src="/images/profile.png" alt="saurabh-profile-pic" />
             </div>
@@ -105,7 +105,7 @@ const Layout = ({children})=> {
               }
             </div>
           </div>
-          <div className="md:w-[92%] w-full bg-white">
+          <div className="md:ml-[8%] md:w-[92%] w-full bg-white">
             {children}
             <footer className="bg-[#FCC255] py-3 mt-5">
               <p className="text-center text-white font-semibold md:text-md text-sm">Copyright © 2024 saurabhk.online. All Rights Reserved</p>

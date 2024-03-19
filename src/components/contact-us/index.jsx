@@ -21,7 +21,7 @@ const ContactUs = ()=> {
                     <Form
                     layout="vertical"
                     >
-                        <div className="grid grid-cols-2 gap-5 mt-6">
+                        <div className="grid md:grid-cols-2 md:gap-5 mt-6">
                             <div>
                                 <Form.Item
                                 label="First Name"
@@ -40,7 +40,7 @@ const ContactUs = ()=> {
                             </div>
                             
                         </div>
-                        <div className="grid grid-cols-2 gap-5">
+                        <div className="grid md:grid-cols-2 md:gap-5">
                             <div>
                                 <Form.Item
                                 label="Email"

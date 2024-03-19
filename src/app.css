@@ -3,3 +3,20 @@
 *{
     font-family: "Josefin Sans", sans-serif;
 }
+
+  ::-webkit-scrollbar {
+    width: 4px; /* Adjust the width to make it thinner */
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Light gray */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #FF517E; /* Pink */
+    border-radius: 3px; /* Adjust the border-radius to make it thinner */
+  }
+
+  /* Firefox
+  scrollbar-width: thin;
+  scrollbar-color: #ff69b4 #f1f1f1;  */
