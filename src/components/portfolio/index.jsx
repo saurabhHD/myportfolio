@@ -56,6 +56,7 @@ const Portfolio = ()=> {
             <div className="flex justify-center">
                 <Tabs
                 centered
+                onTabScroll={{direction: 'right'}}
                 items={projectsCat.map(({label, content}, index) => {
                     return {
                         label : label,

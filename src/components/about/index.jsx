@@ -1,5 +1,6 @@
 import MyBtn from '../shared/my-btn';
 import {PlusOutlined} from '@ant-design/icons'
+import saurabh from '../../assets/saurabh-2.png'
 
 const About = ()=> {
     return (
@@ -8,7 +9,7 @@ const About = ()=> {
                 <div className="p-10">
                     <div className="border-4 border-[#FF517E] p-5">
                         <div className="mt-[-50px] mr-[-50px] relative">
-                            <img src="/images/selfintro.jpg" alt="selfintro image" />
+                            <img src={saurabh} alt="selfintro image" />
                             <PlusOutlined className='absolute bottom-0 p-4 font-extrabold bg-[#00C8DA] text-white cursor-pointer'/>
                         </div>
                     </div>

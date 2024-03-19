@@ -70,7 +70,7 @@ const ContactUs = ()=> {
                     </Form>
                </div>
             </div>
-            <div className="grid md:grid-cols-2 md:gap-52 gap-5 mt-10">
+            {/* <div className="grid md:grid-cols-2 md:gap-52 gap-5 mt-10">
                     <div className="flex flex-col items-center">
                         <PhoneOutlined  className="scale-x-[-1] text-5xl text-[#FF517E]"/>
                         <p className="text-[#556D91] text-2xl font-semibold mt-3">Contact Me</p>
@@ -82,7 +82,7 @@ const ContactUs = ()=> {
                         <p className="text-[#556D91] text-2xl font-semibold mt-3">Email Me</p>
                         <p className="text-gray-500 text-sm">saurabhasdeveloper@gmail.com</p>
                     </div>
-            </div>
+            </div> */}
         </div>
     )
 }
