@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Button} from "antd"
 import {
   HomeOutlined, 
@@ -17,18 +18,22 @@ const Layout = ({children})=> {
 
     const menus = [
       {
+        link: "/",
         name: "Home",
         icon: <HomeOutlined style={{fontSize: '25px', color: '#FF517E'}} />
       },
       {
+        link: "/resume",
         name: "Resume",
         icon: <FileDoneOutlined style={{fontSize: '25px', color: '#00C8DA'}} />
       },
       {
+        link: "/portfolio",
         name: "Portfolio",
         icon: <BookOutlined  style={{fontSize: '25px', color: '#FCBA58'}}/>
       },
       {
+        link: "/contact-us",
         name: "Contact",
         icon: <PhoneOutlined style={{fontSize: '25px', color: '#FF754A'}}/>
       }
@@ -67,6 +72,7 @@ const Layout = ({children})=> {
             {
                 menus.map((item, index) => (
                   <div key={index}>
+                    <Link to={item.link}>
                     <Button
                       icon={item.icon}
                       type="text"
@@ -74,9 +80,9 @@ const Layout = ({children})=> {
                       block={true}
                       className="rounded-none h-20 flex flex-col items-center justify-center text-2xl"
                       title={item.name}
-                    >
-                      
-                    </Button>
+                    />
+
+                    </Link>
                     <hr />
                   </div>
                 ))
@@ -109,9 +115,9 @@ const Layout = ({children})=> {
           </div>
           <div className="md:ml-[8%] md:w-[92%] w-full bg-white">
             {children}
-            <footer className="bg-[#FCC255] py-3 mt-5">
+            {/* <footer className="bg-[#FCC255] py-3 mt-5">
               <p className="text-center text-white font-semibold md:text-md text-sm">Copyright © 2024 saurabhk.online. All Rights Reserved</p>
-            </footer>
+            </footer> */}
           </div>
         </div>
     )

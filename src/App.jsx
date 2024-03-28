@@ -5,16 +5,21 @@ import Resume from "./components/resume"
 import './app.css'
 import Portfolio from "./components/portfolio"
 import ContactUs from "./components/contact-us"
+import { BrowserRouter, Routes, Route,  } from "react-router-dom"
 
 function App() {
   return (
-   <Layout>
-    <Home />
-    <About />
-    <Resume />
-    <Portfolio />
-    <ContactUs />
-   </Layout>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
+  
   )
 }
 
