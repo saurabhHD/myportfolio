@@ -1,0 +1,19 @@
+.image-container {
+    width: 400px;
+    height: 270px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transition: transform 3s ease-in-out;
+  }
+
+  /* CSS to apply animation on hover */
+  .image-container:hover .image {
+    cursor: pointer;
+    transform: translateY(-100%);
+  }
