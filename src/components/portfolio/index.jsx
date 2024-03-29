@@ -39,7 +39,7 @@ const Portfolio = ()=> {
                 <span className="text-xl font-bold p-2 hover:bg-[#FCC255] hover:text-white">Quality Work</span>
                 <h1 className="text-3xl font-bold mt-3 text-[#556D91]">My Projects</h1>
             </div>
-                <div className="grid grid-cols-3 gap-8 m-8">
+                <div className="grid md:grid-cols-3 grid-cols-1 gap-8 m-8">
                    
                     {
                         projects.map((item, index) => (
