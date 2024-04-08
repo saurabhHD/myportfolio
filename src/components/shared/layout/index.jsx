@@ -41,7 +41,7 @@ const Layout = ({children})=> {
 
     const socialMenus = [
       {
-        link: '#',
+        link: 'https://github.com/saurabhHD',
         icon: <GithubOutlined  className="text-blue-800" style={{fontSize: '25px'}} />
       },
       {
@@ -49,15 +49,15 @@ const Layout = ({children})=> {
         icon: <p className="text-blue-600" style={{fontSize: '25px'}} >in</p>
       },
       {
-        link: '#',
+        link: 'https://wa.me/+917300865788',
         icon: <WhatsAppOutlined className="text-green-500" style={{fontSize: '25px'}}/>
       },
       {
-        link: '#',
+        link: 'https://twitter.com/saurabhhd',
         icon: <TwitterOutlined className="text-sky-500" style={{fontSize: '25px'}} />
       },
       {
-        link: '#',
+        link: 'https://www.instagram.com/saurabhhd1/',
         icon: <InstagramOutlined className="text-pink-600" style={{fontSize: '25px'}} />
       }
     ]
@@ -101,14 +101,15 @@ const Layout = ({children})=> {
             <div className="flex flex-col items-center gap-2">
               {
                 socialMenus.map((item, index) => (
+                  <a href={item.link} target="_blank" key={index}>
                   <Button
-                    key={index}
                     icon={item.icon}
                     size="large"
                     type="text"
                     block
                     className="flex flex-col justify-center items-center p-5 rounded-none"
                   />
+                  </a>
                 ))
               }
             </div>
