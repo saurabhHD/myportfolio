@@ -1,19 +1,20 @@
 .image-container {
-    width: 400px;
-    height: 270px;
-    overflow: hidden;
-    position: relative;
-  }
+  width: 400px;
+  height: 270px;
+  overflow: hidden;
+  position: relative;
+}
 
-  .image {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    transition: transform 3s ease-in-out;
-  }
+.image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  transition: transform 2.5s ease; /* Adjusted transition duration */
+  backface-visibility: hidden; /* Helps with hardware acceleration */
+}
 
-  /* CSS to apply animation on hover */
-  .image-container:hover .image {
-    cursor: pointer;
-    transform: translateY(-100%);
-  }
+/* CSS to apply animation on hover */
+.image-container:hover .image {
+  cursor: pointer;
+  transform: translateY(calc(-100% + 270px));
+}

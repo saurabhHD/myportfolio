@@ -5,7 +5,7 @@ const Resume = ()=> {
     return (
         <div className="py-3">
             <div className="text-center">
-                <span className="text-xl font-bold">Resume</span>
+                <span className="text-xl font-bold p-2 hover:bg-[#FCC255] hover:text-white">Resume</span>
                 <h1 className="text-3xl font-bold mt-3 text-[#556D91]">My Education</h1>
             </div>
             <div className="flex justify-center">
