@@ -5,7 +5,7 @@ import {PhoneOutlined, MailOutlined} from "@ant-design/icons"
 
 const ContactUs = ()=> {
     return (
-        <div className="pb-3 md:bg-[url('/images/map-blue_11zon.jpgJ')] bg-cover h-screen">
+        <div className="pb-3 md:bg-[url('/images/map-blue_11zon.jpg')] bg-cover h-screen">
             <div className="text-center bg-white py-3">
                 <span className="text-xl font-bold p-2 hover:bg-[#FCC255] hover:text-white">Contact Me</span>
                 <h1 className="text-3xl font-bold mt-3 text-[#556D91]">Get In Touch</h1>
