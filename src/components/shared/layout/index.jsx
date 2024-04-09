@@ -125,7 +125,7 @@ const Layout = ({children})=> {
                   <Button
                     icon={item.icon}
                     size="large"
-                    type="text"
+                    type="link"
                     block
                     className="flex flex-col justify-center items-center p-5 rounded-none"
                   />
@@ -154,7 +154,6 @@ const Layout = ({children})=> {
           placement="left"
           onClose={onMobileMenuClose}
           open={open}
-          width="60%"
           footer={
             <div className="flex items-center justify-center gap-3">
                
