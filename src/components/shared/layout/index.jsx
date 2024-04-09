@@ -154,6 +154,7 @@ const Layout = ({children})=> {
           placement="left"
           onClose={onMobileMenuClose}
           open={open}
+          width="75%"
           footer={
             <div className="flex items-center justify-center gap-3">
                
