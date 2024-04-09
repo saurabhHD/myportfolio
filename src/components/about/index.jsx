@@ -34,9 +34,9 @@ const About = ()=> {
                             Full Stack Developer
                         </span>
                     </div>
-                    <div className='md:col-span-3 mt-5'>
-                        <img src="/images/signature.png" alt="signature" />
-                    </div>
+                    {/* <div className='md:col-span-3 mt-5'>
+                        <img src="/images/signature.png" alt="signature" className='w-40'/>
+                    </div> */}
                 </div>
                 <div className='flex md:mt-5 mt-10 gap-8'>
                     <MyBtn type='secondary' >

@@ -1,7 +1,7 @@
 import { Form, Input } from "antd"
 const {TextArea} = Input
 import MyBtn from "../shared/my-btn"
-import {PhoneOutlined, MailOutlined} from "@ant-design/icons"
+import {PhoneOutlined, MailOutlined, UserOutlined, ReadOutlined} from "@ant-design/icons"
 
 const ContactUs = ()=> {
     return (
@@ -22,7 +22,7 @@ const ContactUs = ()=> {
                                 label="First Name"
                                 name="firstname"
                                 >
-                                    <Input />
+                                    <Input prefix={<UserOutlined className="text-gray-400"/>} />
                                 </Form.Item>
                             </div>
                             <div>
@@ -30,7 +30,7 @@ const ContactUs = ()=> {
                                 label="Last Name"
                                 name="lastname"
                                 >
-                                    <Input />
+                                    <Input prefix={<UserOutlined className="text-gray-400"/>} />
                                 </Form.Item>
                             </div>
                             
@@ -41,7 +41,7 @@ const ContactUs = ()=> {
                                 label="Email"
                                 name="email"
                                 >
-                                    <Input />
+                                    <Input prefix={<MailOutlined className="text-gray-400"/>} />
                                 </Form.Item>
                             </div>
                             <div>
@@ -49,7 +49,7 @@ const ContactUs = ()=> {
                                 label="Subject"
                                 name="subject"
                                 >
-                                    <Input />
+                                    <Input prefix={<ReadOutlined className="text-gray-400"/>}/>
                                 </Form.Item>
                             </div>
                         </div>

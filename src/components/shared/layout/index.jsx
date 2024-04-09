@@ -1,17 +1,19 @@
 import { Link } from "react-router-dom"
-import { Button} from "antd"
+import { Button, Drawer} from "antd"
 import {
   HomeOutlined, 
   FileDoneOutlined,
   BookOutlined,
   PhoneOutlined,
   GithubOutlined,
-  LinkedinOutlined,
   WhatsAppOutlined,
   TwitterOutlined,
-  InstagramOutlined 
+  InstagramOutlined,
+  MenuOutlined,
+  MailOutlined 
 } from "@ant-design/icons"
 import saurabh from '../../../assets/saurabh-2.png'
+import React, { useState } from "react"
 
 
 const Layout = ({children})=> {
@@ -59,8 +61,26 @@ const Layout = ({children})=> {
       {
         link: 'https://www.instagram.com/saurabhhd1/',
         icon: <InstagramOutlined className="text-pink-600" style={{fontSize: '25px'}} />
+      },
+      {
+        link: 'mailto:saurabhasdeveloper@gmail.com',
+        icon: <MailOutlined className="text-blue-600" style={{fontSize: '25px'}} />
       }
     ]
+
+    const [open, setOpen] = useState(false)
+
+    const onMobileMenuOpen = ()=> {
+      setOpen(true)
+    }
+    const onMobileMenuClose = ()=>{
+      setOpen(false)
+    }
+    const renderIcon = (icon) => {
+      return React.cloneElement(icon, {
+        style: null // Removing inline styles
+      });
+    };
 
     return (
         <div className="w-100 flex">
@@ -115,11 +135,74 @@ const Layout = ({children})=> {
             </div>
           </div>
           <div className="md:ml-[8%] md:w-[92%] w-full bg-white">
+            <div className="text-right md:hidden fixed right-0">
+              <Button
+                icon={<MenuOutlined />}
+                size="large"
+                onClick={onMobileMenuOpen}
+                className="m-3"
+              />
+            </div>
             {children}
             {/* <footer className="bg-[#FCC255] py-3 mt-5">
               <p className="text-center text-white font-semibold md:text-md text-sm">Copyright © 2024 saurabhk.online. All Rights Reserved</p>
             </footer> */}
           </div>
+          <Drawer
+          title={null}
+          closable={false}
+          placement="left"
+          onClose={onMobileMenuClose}
+          open={open}
+          width="60%"
+          footer={
+            <div className="flex items-center justify-center gap-3">
+               
+              {
+                
+                socialMenus.map((item, index) => (
+                  <a href={item.link} target="_blank" key={index}>
+                  <Button
+                    icon={item.icon}
+                    size="large"
+                    type="link"
+                    block
+                    className="flex flex-col justify-center items-center rounded-none"
+                  />
+                  </a>
+                ))
+              }
+            </div>
+          }
+          >
+            <div>
+              <div className="flex flex-col items-center justify-center gap-2">
+                <img src={saurabh} alt="saurabh-profile-pic" className="rounded-full w-24 h-24"/>
+                <span className="text-lg">Saurabh Kumar</span>
+                
+                
+              </div>
+              <div className="mt-5">
+                {
+                  menus.map((item, index) => (
+                    <Link to={item.link} key={item.name} className="mb-3 ">
+                    <Button
+                      type="primary"
+                      icon={renderIcon(item.icon)}
+                      size="large"
+                      block
+                      className="shadow-none border-none text-sm text-left text-gray-400"
+                      >
+                        {item.name}
+                    </Button>
+                    </Link>
+                  ))
+                }
+
+              </div>
+              
+            </div>
+          </Drawer>
         </div>
     )
 }
