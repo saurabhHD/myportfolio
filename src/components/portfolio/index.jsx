@@ -43,7 +43,7 @@ const Portfolio = ()=> {
                 <div className="grid md:grid-cols-3 grid-cols-1 gap-8 m-8">
                     {
                         projects.map((item, index) => (
-                            <div className="shadow-sm rounded image-container" key={item.title} title={item.title}>
+                            <div className="shadow-sm rounded image-container w-[100%]" key={item.title} title={item.title}>
                                 <a href={item.link} target="_blank">
                                 <img src={item.image} alt={item.title} className="image"/>
                                 </a>
