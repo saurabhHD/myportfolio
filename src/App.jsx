@@ -2,10 +2,12 @@ import Layout from "./components/shared/layout"
 import Home from "./components/home"
 import About from "./components/about"
 import Resume from "./components/resume"
-import './app.css'
 import Portfolio from "./components/portfolio"
 import ContactUs from "./components/contact-us"
+import NotFoundPage from "./components/shared/404"
 import { BrowserRouter, Routes, Route,  } from "react-router-dom"
+import './app.css'
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/*" element={<NotFoundPage />} />
         </Routes>
       </Layout>
     </BrowserRouter>
