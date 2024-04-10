@@ -5,33 +5,33 @@ const Portfolio = ()=> {
         {
             title: "fnp.com",
             link: "https://www.fnp.com",
-            image: "images/fnp_6615_psr.jpg"
+            image: "/images/fnp_6615_psr.jpg"
         },
         {
             title: "interflora.in",
             link: "https://www.interflora.in",
-            image: "images/interflora_5930_psr.jpg"
+            image: "/images/interflora_5930_psr.jpg"
         },
         {
             title: "hotelsimna.com",
             link: "http://www.hotelsimna.com",
-            image: "images/simna-international_11zon.png"
+            image: "/images/simna-international_11zon.png"
         },
         {
             title: "balloonpro.in",
             link: "https://balloonpro.in",
-            image: "images/baloon_250_psr.jpg"
+            image: "/images/baloon_250_psr.jpg"
         },
         {
             title: "midaasevents.co.in",
             link: "https://midaasevents.co.in",
-            image: "images/middasevent_2271_psr.jpg"
+            image: "/images/middasevent_2271_psr.jpg"
         },
         
         {
             title: "eventzgraph.com",
             link: "https://eventzgraph.com",
-            image: "images/homeeventzGraph_3060_psr.jpg"
+            image: "/images/homeeventzGraph_3060_psr.jpg"
         }
     ]
    return (

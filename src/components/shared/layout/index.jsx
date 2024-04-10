@@ -95,10 +95,10 @@ const Layout = ({children})=> {
                     <Link to={item.link}>
                     <Button
                       icon={item.icon}
-                      type="text"
+                      type="link"
                       size="large"
                       block={true}
-                      className="rounded-none h-20 flex flex-col items-center justify-center text-2xl"
+                      className="rounded-none h-20 flex flex-col items-center justify-center transition-transform hover:scale-125"
                       title={item.name}
                     />
 
@@ -127,7 +127,8 @@ const Layout = ({children})=> {
                     size="large"
                     type="link"
                     block
-                    className="flex flex-col justify-center items-center p-5 rounded-none"
+                    className="flex flex-col justify-center items-center p-5 rounded-none transition-transform hover:scale-150"
+                    
                   />
                   </a>
                 ))
@@ -140,7 +141,7 @@ const Layout = ({children})=> {
                 icon={<MenuOutlined />}
                 size="large"
                 onClick={onMobileMenuOpen}
-                className="m-3"
+                className="m-3 z-10"
               />
             </div>
             {children}
@@ -167,7 +168,7 @@ const Layout = ({children})=> {
                     size="large"
                     type="link"
                     block
-                    className="flex flex-col justify-center items-center rounded-none"
+                    className="flex flex-col justify-center items-center rounded-none transition-transform hover:scale-125"
                   />
                   </a>
                 ))
@@ -185,7 +186,7 @@ const Layout = ({children})=> {
               <div className="mt-5">
                 {
                   menus.map((item, index) => (
-                    <Link to={item.link} key={item.name} className="mb-3 ">
+                    <Link to={item.link} key={item.name} className="mb-3">
                     <Button
                       type="primary"
                       icon={renderIcon(item.icon)}

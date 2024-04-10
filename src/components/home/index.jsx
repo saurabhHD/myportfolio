@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import MyBtn from "../shared/my-btn"
 import { ReactTyped } from "react-typed";
 
@@ -23,10 +24,23 @@ const Home = ()=> {
                    />
                 </p>
                 <div className="space-x-10 pt-4">
+                    
                   <p className="text-gray-400">
                   I have honed my skills in building dynamic web applications utilizing MongoDB, Express.js, React, and Node.js. With expertise spanning across both front-end and back-end technologies, I excel in architecting and deploying scalable solutions that precisely cater to user needs. From conceptualization to implementation, I am committed to crafting intuitive and efficient software solutions.
-                  </p>                    
+                  </p>
+                                     
                 </div>
+                <div className="flex md:mt-4 mt-6 gap-5">
+                    <MyBtn type="secondary">
+                        Download CV
+                    </MyBtn>
+                    <Link to="/contact-us">
+                        <MyBtn>
+                            Contact Me
+                        </MyBtn>
+                    </Link>
+                    
+                </div> 
             </div>
          </div>
     )
