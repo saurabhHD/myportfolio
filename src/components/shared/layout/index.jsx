@@ -12,7 +12,7 @@ import {
   MenuOutlined,
   MailOutlined 
 } from "@ant-design/icons"
-import saurabh from '../../../assets/saurabh-2.png'
+import saurabh from '../../../assets/saurabh-kumar-transparent.png'
 import React, { useState } from "react"
 
 
@@ -86,7 +86,7 @@ const Layout = ({children})=> {
         <div className="w-100 flex">
           <div className="md:w-[8%] hidden bg-white md:flex flex-col py-5 gap-8 h-screen overflow-y-scroll md:fixed left-menu-bar" style={{scrollbarWidth: '5px', scrollbarColor: 'blue'}}>
             <div className="flex items-center justify-center">
-              <img src={saurabh} alt="saurabh-profile-pic" className="rounded-full w-24 h-24"/>
+              <img src={saurabh} alt="saurabh-profile-pic" className="rounded-full w-24 h-24 bg-gray-200 hover:bg-pink-500"/>
             </div>
             <div className="w-100">
             {
