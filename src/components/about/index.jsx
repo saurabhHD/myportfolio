@@ -8,7 +8,7 @@ import {
     MailOutlined,
     CloseOutlined 
   } from "@ant-design/icons"
-  import { Button} from "antd"
+  import { Button, Tooltip} from "antd"
 import saurabh from '../../assets/saurabh-kumar-transparent.png'
 import { useState } from 'react';
 
@@ -56,30 +56,39 @@ const About = ()=> {
                             <img src={saurabh} alt="selfintro image" className="bg-gray-200 hover:bg-pink-500"/>
                             {
                                 profile && 
-                                <CloseOutlined className='absolute bottom-0 p-4 font-extrabold bg-[#00C8DA] text-white cursor-pointer z-10' onClick={profileToggle} htmlType="button"/>
+                                <>
+                                <Tooltip title="Close about me !" color='#FF517E' placement='top' className='md:visible invisible' >
+                                    <CloseOutlined className='md:visible invisible absolute bottom-0 md:p-4 p-1 font-extrabold bg-[#00C8DA] text-white cursor-pointer z-10' onClick={profileToggle} htmlType="button"/>
+                                </Tooltip>
+                                <Tooltip title="Close about me !" color='#FF517E' placement='top' className='md:invisible '>
+                                <CloseOutlined className='md:invisible visible absolute top-0 right-0 p-3 font-extrabold bg-[#00C8DA] text-white cursor-pointer z-10' onClick={profileToggle} htmlType="button"/>
+                                </Tooltip>
+                                </>
                                 ||
-                                <PlusOutlined className='absolute bottom-0 p-4 font-extrabold bg-[#00C8DA] text-white cursor-pointer z-10' onClick={profileToggle} htmlType="button"/>
-                            }
+                                <Tooltip title="More about me !" color='#FF517E'>
+                                    <PlusOutlined className='absolute bottom-0 p-4 font-extrabold bg-[#00C8DA] text-white cursor-pointer z-10' onClick={profileToggle} htmlType="button"/>
+                                </Tooltip>
+                            }   
                             {
                                 profile && 
-                                <div className='absolute top-0 left-0 w-full h-full p-4 bg-black opacity-70 text-white'>
-                                    <p className='text-2xl'>Saurabh Kumar</p>
-                                    <p className='text-gray-400'>Full Stack Developer</p>
-                                    <div className='grid grid-cols-3 mt-5 gap-2'>
+                                <div className='absolute top-0 left-0 w-full h-full md:p-4 p-2 bg-black opacity-70 text-white'>
+                                    <p className='md:text-2xl text-sm'>Saurabh Kumar</p>
+                                    <p className='text-gray-400 text-sm'>Full Stack Developer</p>
+                                    <div className='grid grid-cols-2 md:grid-cols-3 md:mt-5 md:gap-2'>
                                         <p className='text-[#FCC255] font-bold'>Age</p>
-                                        <p className='col-span-2'>24</p>
+                                        <p className='md:col-span-2'>24</p>
                                         <p className='text-[#FCC255] font-bold'>Email</p>
-                                        <p className='col-span-2'>saurabhasdeveloper@gmail.com</p>
+                                        <p className='md:col-span-2 break-all'>saurabhasdeveloper@gmail.com</p>
                                         <p className='text-[#FCC255] font-bold'>Phone</p>
-                                        <p className='col-span-2'>+91 7300865788</p>
+                                        <p className='md:col-span-2'>+91 7300865788</p>
                                         <p className='text-[#FCC255] font-bold'>Residence</p>
-                                        <p className='col-span-2'>India</p>
+                                        <p className='md:col-span-2'>India</p>
                                         <p className='text-[#FCC255] font-bold'>Qualification</p>
-                                        <p className='col-span-2'>B.Tech (CSE)</p>
+                                        <p className='md:col-span-2'>B.Tech (CSE)</p>
                                         <p className='text-[#FCC255] font-bold'>Exprience</p>
-                                        <p className='col-span-2'>2 Year+</p>
+                                        <p className='md:col-span-2'>2 Year+</p>
                                     </div>
-                                    <div className='flex justify-center items-center mt-8'>
+                                    <div className='flex justify-center items-center md:mt-8 mt-2'>
                                         <div className='grid grid-cols-6 gap-3'>
                                         {
                                             socialMenus.map((item, index) => (
@@ -89,8 +98,7 @@ const About = ()=> {
                                                 size="large"
                                                 type="link"
                                                 block
-                                                className="flex flex-col justify-center items-center p-5 rounded-none transition-transform hover:scale-150"
-                                                
+                                                className="flex flex-col justify-center items-center p-5 rounded-none transition-transform hover:scale-150"  
                                             />
                                             </a>
                                             ))
