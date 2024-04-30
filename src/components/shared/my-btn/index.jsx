@@ -7,10 +7,12 @@ const MyBtn = ({
     children = 'Button',
     link = "#",
     type = "primary",
-    rounded = true
+    rounded = true,
+    onBtnClick = null
 })=> {
     return (
         <button 
+        onClick={onBtnClick}
         className={`${rounded && "rounded-full"} ${Type[type]} text-white md:px-10 px-4 md:py-4 py-2 md:text-md text-sm transition-transform md:hover:scale-90 hover:scale-110`}>
            {children}
         </button>

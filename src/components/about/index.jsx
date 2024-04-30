@@ -11,8 +11,11 @@ import {
   import { Button, Tooltip} from "antd"
 import saurabh from '../../assets/saurabh-kumar-transparent.png'
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const About = ()=> {
+
+    const navigate = useNavigate()
 
     const socialMenus = [
         {
@@ -113,13 +116,13 @@ const About = ()=> {
             </div>
             <div className="col-span-3 px-5 pt-4">
                 <span className='text-2xl font-semibold p-2 hover:bg-[#FCC255] hover:text-white'>About Me</span>
-                <h2 className='text-4xl font-semibold text-[#00C8DA] my-4'>I'm In The Web Development Industry With 2 Years Of Experience.</h2>
+                <h2 className='text-4xl font-semibold text-[#00C8DA] my-4'>I'm In The Web Development Industry With 3 Years Of Experience.</h2>
                 <p className='text-gray-500'>
-                    There are many variations of passages of Lorem Ipsum , but the a have suffered are some form, by injected humour, or the words which don't look even slightl. If you use a passage of, you need to be sure there isn't anything look even slightly believable. If you are going to use a of , you need to be sure there isn't hidden in the middle the on the tend.
+                From crafting robust backend solutions with Node.js to designing intuitive user interfaces with React.js, every project has honed my skills and expanded my horizons.
                 </p>
                 <br />
                 <p className='text-gray-500'>
-                    Embarrassing hidden in the middle of text. All the Lorem Ipsum generate on the are Internet tend to repeat predefined chunks as necessary, making of this the first true generator on the Internet which don't look even you.
+                In an ever-evolving tech landscape, I prioritize innovation and strive to deliver top-notch, scalable solutions. My passion for coding and dedication to learning are the pillars of my success.
                 </p>
                 <div className='grid md:grid-cols-4 grid-cols-1'>
                     <div className='flex flex-col gap-1 mt-5'>
@@ -138,7 +141,7 @@ const About = ()=> {
                     <MyBtn type='secondary' >
                         Download CV
                     </MyBtn>
-                    <MyBtn>
+                    <MyBtn onBtnClick={(e)=> navigate("/contact-us")}>
                         Hire Me
                     </MyBtn>
                 </div>

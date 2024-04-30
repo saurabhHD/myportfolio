@@ -1,61 +1,154 @@
-import { Steps } from "antd"
-import {UserOutlined} from "@ant-design/icons"
+import { Steps, Tag, Divider } from "antd"
+import {BookOutlined} from "@ant-design/icons"
+import { PiStudentBold } from "react-icons/pi";
+import { BiSolidFileHtml, BiSolidFileCss } from "react-icons/bi";
+
 import "./index.css"
 
 const Resume = ()=> {
 
-    const educationInfo = [
-        {
-            date: 2023,
-            title: "B.Tech (Computer Science & Engineering)",
-            desc: "Completed Bachelor of Technology in Computer Science & Engineering from AKTU University Lucknow.",
-            color: '#1B5F8C'
-        },
-        {
-            date: 2021,
-            title: "Advance Diploma in Software Engineering (Online)",
-            desc: "Completed an advanced diploma in Software Engineering (Online) program, spanning two years, from Wap Institute.",
-            color: '#4CADAD'
-        },
-        {
-            date: 2020,
-            title: "Diploma In Computer Science & Engineering",
-            desc: "Completed a three-year diploma program in Computer Science & Engineering from Government Polytechnic Bijnor.",
-            color: '#E24A68'
-        },
-        {
-            date: 2017,
-            title: "Intermediate",
-            desc: "Completed Intermediate education from UP Board.",
-            color: '#FBCA3E'
-        },
-        {
-            date: 2015,
-            title: "High School",
-            desc: "Completed Intermediate education from UP Board.",
-            color: '#41516C'
+    const stepsHandler = (steps) => {
+        const result = []
+
+        for(const step of steps){
+            result.push({
+                icon: step.icon,
+                title: <Tag color="#00C8DA" className="mb-4 rounded-xl">{step.date}</Tag>,
+                description: <div className="flex flex-col items-start gap-2">
+                        <h1 className="text-xl text-[#556D91] font-semibold">{step.title}</h1>
+                        <p className="text-gray-500">{step.description}</p>
+                    </div>
+            })
         }
-    ];
-    
+
+        return result
+    }
 
     return (
-        <div className="py-3">
+        <div className="py-3 px-5">
             <div className="text-center">
                 <span className="text-xl font-bold p-2 hover:bg-[#FCC255] hover:text-white">Resume</span>
-                <h1 className="text-3xl font-bold mt-3 text-[#556D91]">My Education</h1>
+                <h1 className="text-3xl font-bold mt-3 text-[#556D91]">My Exprience</h1>
             </div>
-            <div className="flex justify-center items-center mt-5">
-                <ul>
-                    {
-                        educationInfo.map((item, index) => (
-                            <li style={{ '--accent-color': item.color }} key={item.title}>
-                                <div className="date">{item.date}</div>
-                                <div className="title">{item.title}</div>
-                                <div className="descr">{item.desc}</div>
-                            </li>
-                        ))
-                    }
-                </ul>
+            <div className="">
+                <h1 className="text-2xl font-bold my-3 text-[#556D91] flex ml-5">My Technical Skills</h1>
+                <div>
+                    <div className="shadow-md p-5">
+                        <p className="mb-3 text-[#556D91] font-semibold">Front End</p>
+                        <div className="flex gap-3">
+                            <p className="flex items-center">
+                            <BiSolidFileHtml className="text-3xl text-orange-500"/>
+                            Html
+                            </p>
+                            <p className="flex items-center">
+                            <BiSolidFileCss  className="text-3xl text-blue-500"/>
+                            Css
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1 className="text-2xl font-bold my-3 text-[#556D91] flex ml-5">My Exprience</h1>
+                <div className="grid md:grid-cols-2 gap-3 px-4 mt-4">
+                        <div className="flex justify-center items-center">
+                            <Steps
+                            direction="vertical"
+                            items={stepsHandler([
+                                {
+                                    icon: <BookOutlined className="text-[#00C8DA]" />,
+                                    date: "Apri 2021 - Sep 2021",
+                                    title: "Something Project",
+                                    description: "This is a description. This is a description.This is a description. This is a description."
+                                },
+                                {
+                                    icon: <BookOutlined className="text-[#00C8DA]" />,
+                                    date: "Apri 2021 - Sep 2021",
+                                    title: "Something Project",
+                                    description: "This is a description. This is a description.This is a description. This is a description."
+                                },
+                                {
+                                    icon: <BookOutlined className="text-[#00C8DA]" />,
+                                    date: "Apri 2021 - Sep 2021",
+                                    title: "Something Project",
+                                    description: "This is a description. This is a description.This is a description. This is a description."
+                                },
+                                
+                            ])}
+                            />
+                        </div>
+                        <div>
+                            <Steps
+                                direction="vertical"
+                                items={stepsHandler([
+                                    {
+                                        icon: <BookOutlined className="text-[#00C8DA]" />,
+                                        date: "Apri 2021 - Sep 2021",
+                                        title: "Something Project",
+                                        description: "This is a description. This is a description.This is a description. This is a description."
+                                    },
+                                    {
+                                        icon: <BookOutlined className="text-[#00C8DA]" />,
+                                        date: "Apri 2021 - Sep 2021",
+                                        title: "Something Project",
+                                        description: "This is a description. This is a description.This is a description. This is a description."
+                                    },
+                                    {
+                                        icon: <BookOutlined className="text-[#00C8DA]" />,
+                                        date: "Apri 2021 - Sep 2021",
+                                        title: "Something Project",
+                                        description: "This is a description. This is a description.This is a description. This is a description."
+                                    },
+                                    
+                                ])}
+                                />
+                        </div>
+                </div>
+                <Divider />
+                <h1 className="text-2xl font-bold mt-7 mb-3 text-[#556D91] flex ml-5 ">My Education</h1>
+                <div className="grid md:grid-cols-2 gap-3 px-4 mt-4">
+                        <div>
+                            <Steps
+                            
+                            direction="vertical"
+                            items={stepsHandler([
+                                {
+                                    icon: <PiStudentBold className="text-3xl text-[#00C8DA]"/>,
+                                    date: "Apri 2021 - Sep 2021",
+                                    title: "B.tech",
+                                    description: "This is a description. This is a description.This is a description. This is a description."
+                                },
+                                {
+                                    icon: <PiStudentBold className="text-3xl text-[#00C8DA]"/>,
+                                    date: "Apri 2021 - Sep 2021",
+                                    title: "Advance Diploma In Software Engg",
+                                    description: "This is a description. This is a description.This is a description. This is a description."
+                                }
+                            ])}
+                            />
+                        </div>
+                        <div>
+                            <Steps
+                                
+                                direction="vertical"
+                                items={stepsHandler([
+                                    {
+                                        icon: <PiStudentBold className="text-3xl text-[#00C8DA]"/>,
+                                        date: "Apri 2021 - Sep 2021",
+                                        title: "Diploma In Coumputer Science & Engg",
+                                        description: "This is a description. This is a description.This is a description. This is a description."
+                                    },
+                                    {
+                                        icon: <PiStudentBold className="text-3xl text-[#00C8DA]"/>,
+                                        date: "Apri 2021 - Sep 2021",
+                                        title: "Something Project",
+                                        description: "This is a description. This is a description.This is a description. This is a description."
+                                    },
+                                    
+                                ])}
+                                />
+                        </div>
+                </div>
             </div>
         </div>
     )

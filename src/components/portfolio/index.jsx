@@ -35,7 +35,7 @@ const Portfolio = ()=> {
         }
     ]
    return (
-        <div className="py-3">
+        <div className="py-3 bg-gray-100">
             <div className="text-center">
                 <span className="text-xl font-bold p-2 hover:bg-[#FCC255] hover:text-white">Quality Work</span>
                 <h1 className="text-3xl font-bold mt-3 text-[#556D91]">My Projects</h1>
@@ -43,7 +43,7 @@ const Portfolio = ()=> {
                 <div className="grid md:grid-cols-3 grid-cols-1 gap-8 m-8">
                     {
                         projects.map((item, index) => (
-                            <div className="shadow-sm rounded image-container w-[100%]" key={item.title} title={item.title}>
+                            <div className="shadow-smrounded image-container w-[100%]" key={item.title} title={item.title}>
                                 <a href={item.link} target="_blank">
                                 <img src={item.image} alt={item.title} className="image"/>
                                 </a>

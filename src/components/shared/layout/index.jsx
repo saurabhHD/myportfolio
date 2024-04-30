@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import {Link, useNavigate} from "react-router-dom"
 import { Button, Drawer} from "antd"
 import {
   HomeOutlined, 
@@ -17,6 +17,8 @@ import React, { useState } from "react"
 
 
 const Layout = ({children})=> {
+
+    const navigate = useNavigate()
 
     const menus = [
       {
@@ -92,7 +94,6 @@ const Layout = ({children})=> {
             {
                 menus.map((item, index) => (
                   <div key={index}>
-                    <Link to={item.link}>
                     <Button
                       icon={item.icon}
                       type="link"
@@ -100,9 +101,8 @@ const Layout = ({children})=> {
                       block={true}
                       className="rounded-none h-20 flex flex-col items-center justify-center transition-transform hover:scale-125"
                       title={item.name}
+                      onClick={(e) => navigate(item.link)}
                     />
-
-                    </Link>
                     <hr />
                   </div>
                 ))
