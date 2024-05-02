@@ -140,9 +140,11 @@ const About = ()=> {
                     </div> */}
                 </div>
                 <div className='flex md:mt-5 mt-10 gap-8'>
-                    <MyBtn type='secondary' >
-                    <a href="cv/cv-sample.pdf" target="_blank" download={true}>Download CV</a>
-                    </MyBtn>
+                    <a href="cv/cv-sample.pdf" target="_blank" download={true}>
+                        <MyBtn type='secondary' >
+                            Download CV
+                        </MyBtn>
+                    </a>
                     <MyBtn onBtnClick={(e)=> navigate("/contact-us")}>
                         Hire Me
                     </MyBtn>

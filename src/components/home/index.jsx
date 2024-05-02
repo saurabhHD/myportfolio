@@ -31,9 +31,11 @@ const Home = ()=> {
                                      
                 </div>
                 <div className="flex md:mt-4 mt-6 gap-5">
+                    <a href="cv/cv-sample.pdf" target="_blank" download={true}>
                     <MyBtn type="secondary">
-                        <a href="cv/cv-sample.pdf" target="_blank" download={true}>Download CV</a>
+                        Download CV
                     </MyBtn>
+                    </a>
                     <Link to="/contact-us">
                         <MyBtn>
                             Contact Me
