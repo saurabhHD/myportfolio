@@ -50,8 +50,8 @@ const ContactUs = ()=> {
             </div>
             <div className="md:flex justify-center  items-center md:px-10 px-3 mt-6 py-5 "> 
                <div className="backdrop-blur bg-white/50 rounded-lg p-6">
-                    <div className="grid md:grid-cols-2">
-                        <div className="flex flex-col gap-5">
+                    <div className="grid md:grid-cols-2 gap-3">
+                        <div className="flex flex-col gap-5 mb-5">
                             <p className="text-xl text-[#556D91] font-semibold">Let's get in touch</p>
                             <p className="text-justify text-gray-800">Let's connect and explore how we can<br /> leverage technology to achieve your goals.<br /> Feel free to reach out to me using <br />the contact form below or connect <br />with me on social media. I look forward to hearing <br />  from you and starting this journey together!</p>
                             <div className="flex flex-col gap-3">
@@ -88,7 +88,7 @@ const ContactUs = ()=> {
                         </div>
                         
                         <div>
-                            <p className="text-xl text-[#556D91] font-semibold">Contact Form</p>
+                            <p className="text-xl text-[#556D91] font-semibold ">Contact Form</p>
                             <Form
                             layout="vertical"
                             >
