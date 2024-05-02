@@ -141,7 +141,7 @@ const About = ()=> {
                 </div>
                 <div className='flex md:mt-5 mt-10 gap-8'>
                     <MyBtn type='secondary' >
-                        Download CV
+                    <a href="cv/cv-sample.pdf" target="_blank" download={true}>Download CV</a>
                     </MyBtn>
                     <MyBtn onBtnClick={(e)=> navigate("/contact-us")}>
                         Hire Me
