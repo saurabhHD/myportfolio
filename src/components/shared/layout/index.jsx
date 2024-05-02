@@ -49,7 +49,7 @@ const Layout = ({children})=> {
         icon: <GithubOutlined  className="text-blue-800" style={{fontSize: '25px'}} />
       },
       {
-        link: '#',
+        link: 'https://www.linkedin.com/in/saurabh-kumar-90008a307/',
         icon: <p className="text-blue-600" style={{fontSize: '25px'}} >in</p>
       },
       {
