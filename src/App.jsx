@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Layout from "./components/shared/layout"
 import Home from "./components/home"
 import About from "./components/about"
@@ -10,6 +11,19 @@ import './app.css'
 
 
 function App() {
+  useEffect(() => {
+    const downloadResume = () => {
+      const resumeUrl = 'cv/cv-sample.pdf'; // Replace 'path_to_your_resume.pdf' with the actual URL of your resume
+      const link = document.createElement('a');
+      link.href = resumeUrl;
+      link.setAttribute('download', 'sample_resume.pdf'); // Replace 'your_resume.pdf' with the desired filename
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+
+    downloadResume();
+  }, []);
   return (
     <BrowserRouter>
       <Layout>

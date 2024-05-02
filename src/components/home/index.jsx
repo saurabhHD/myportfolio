@@ -1,22 +1,9 @@
-import { useEffect } from "react";
 import { Link, } from "react-router-dom";
 import MyBtn from "../shared/my-btn"
 import { ReactTyped } from "react-typed";
 
 const Home = ()=> {
-    useEffect(() => {
-        const downloadResume = () => {
-          const resumeUrl = 'cv/cv-sample.pdf'; // Replace 'path_to_your_resume.pdf' with the actual URL of your resume
-          const link = document.createElement('a');
-          link.href = resumeUrl;
-          link.setAttribute('download', 'sample_resume.pdf'); // Replace 'your_resume.pdf' with the desired filename
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-        };
     
-        downloadResume();
-      }, []);
 
     return (
          <div className="flex flex-col gap-10 justify-center h-screen bg-gray-50">
