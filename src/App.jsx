@@ -13,10 +13,10 @@ import './app.css'
 function App() {
   useEffect(() => {
     const downloadResume = () => {
-      const resumeUrl = 'cv/cv-sample.pdf'; // Replace 'path_to_your_resume.pdf' with the actual URL of your resume
+      const resumeUrl = 'cv/Saurabh-kumar-cv.pdf'; // Replace 'path_to_your_resume.pdf' with the actual URL of your resume
       const link = document.createElement('a');
       link.href = resumeUrl;
-      link.setAttribute('download', 'sample_resume.pdf'); // Replace 'your_resume.pdf' with the desired filename
+      link.setAttribute('download', 'saurabh_kumar_cv.pdf'); // Replace 'your_resume.pdf' with the desired filename
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
