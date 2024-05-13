@@ -139,6 +139,13 @@ const Resume = ()=> {
                             items={stepsHandler([
                                 {
                                     icon: <BookOutlined className="text-[#00C8DA]" />,
+                                    date: "2023",
+                                    title: "Photo Signature Resize",
+                                    description: `https://photosignatureresize.com, born from my college project, has become a go-to tool for over 100,000 job seekers monthly. This user-friendly platform empowers you to easily resize and compress your photos and signatures specifically for online job applications.`,
+                                    orgnization: "College Project"
+                                },
+                                {
+                                    icon: <BookOutlined className="text-[#00C8DA]" />,
                                     date: "May 2021 - Sep 2021",
                                     title: "Balloon Pro",
                                     description: `The company, Balloon Pro, offers a variety of event planning services. They can decorate for 
@@ -173,6 +180,13 @@ const Resume = ()=> {
                             <Steps
                                 direction="vertical"
                                 items={stepsHandler([
+                                    {
+                                        icon: <BookOutlined className="text-[#00C8DA]" />,
+                                        date: "2020",
+                                        title: "Bihar Online Portal",
+                                        description: `I built and maintain Bihar Online Portal (https://biharonlineportal.com), a website that receives around 200,000 visitors monthly. The portal allows users to apply for various government services in Bihar online, including certificates, registrations, admissions for educational institutions, land registration, and health care. It also provides information on government job openings.`,
+                                        orgnization: "Freelance Project"
+                                    },
                                     {
                                         icon: <BookOutlined className="text-[#00C8DA]" />,
                                         date: "Aug 2022 - Dec 2022",
