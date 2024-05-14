@@ -200,9 +200,9 @@ const Resume = ()=> {
                                         icon: <BookOutlined className="text-[#00C8DA]" />,
                                         date: "Feb 2023 - Jul 2023",
                                         title: "EventzGraph",
-                                        description: `This is an article about a Mumbai event management company called EventzGraph. The 
-                                        company offers a variety of services including wedding planning, corporate event management, and birthday 
-                                        party planning. They also offer decoration services.`,
+                                        description: `This is an event management company called EventzGraph. The company offers a variety of
+                                        services including wedding planning, corporate event management, and birthday party planning. They also
+                                        offer decoration services`,
                                         orgnization: "Techsunset"
                                     },
                                     {
