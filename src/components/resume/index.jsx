@@ -61,10 +61,6 @@ const Resume = ()=> {
             { name: "Express Js", icon: <SiExpress />, color: "text-green-600" },
             { name: "Mongoose", icon: <IoLogoJavascript />, color: "text-orange-500" },
             { name: "MongoDB", icon: <SiMongodb />, color: "text-green-400" },
-            { name: "PHP", icon: <FaPhp />, color: "text-blue-900" },
-            { name: "Laravel", icon: <FaLaravel />, color: "text-red-500" },
-            { name: "SQL", icon: <BsFiletypeSql />, color: "text-blue-600" },
-            { name: "MySQL", icon: <SiMysql />, color: "text-blue-900" }
           ]
         },
         {
@@ -72,10 +68,6 @@ const Resume = ()=> {
             skills: [
               { name: "AWS", icon: <FaAws />, color: "text-orange-500" },
               { name: "Docker", icon: <FaDocker />, color: "text-blue-700" },
-              { name: "Jira", icon: <FaJira />, color: "text-blue-400" },
-              { name: "Zoho", icon: <SiZoho />, color: "text-red-400" },
-              { name: "Fire Base", icon: <SiFirebase />, color: "text-yellow-400" },
-              { name: "Cloudinary", icon: <SiCloudinary />, color: "text-blue-500" },
               { name: "Apache", icon: <SiApache />, color: "text-red-600" },
               { name: "Nginx", icon: <SiNginx />, color: "text-green-500" }
             ]
