@@ -21,7 +21,7 @@ const ContactUs = ()=> {
           icon: <GithubOutlined  className="text-blue-800" style={{fontSize: '25px'}} />
         },
         {
-          link: 'https://www.linkedin.com/in/saurabh-kumar-90008a307/',
+          link: 'https://www.linkedin.com/in/saurabhhd/',
           icon: <p className="text-blue-600" style={{fontSize: '25px'}} >in</p>
         },
         {
